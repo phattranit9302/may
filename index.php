@@ -37,7 +37,7 @@
     else if($message == "2"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "ลิงค์คำนวณพื้นที่ผิวที่น้อยที่สุดของปรึซึมสี่เหลี่ยมมุมฉากและทรงกระบอก"."\n"."http://www.raot.co.th/more_news.php?cid=10&filename=index/.";
+        $arrayPostData['messages'][0]['text'] = "ลิงค์คำนวณพื้นที่ผิวที่น้อยที่สุดของปรึซึมสี่เหลี่ยมมุมฉากและทรงกระบอก"."\n"."http://reducecostssavematerial.epizy.com.";
         replyMsg($arrayHeader,$arrayPostData);
     }
    else if($message == "3"){
