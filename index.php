@@ -46,6 +46,18 @@
         $arrayPostData['messages'][0]['text'] = "ภาพตัวอย่างบรรจุภัณฑ์ปรึซึมสี่เหลี่ยมมุมฉาก"."\n"."https://docs.google.com/document/d/1CJaSBeO7fPn5N9c0lXvK2z7MOp6qqiL-WqSRVJ24dAg/edit.";
         replyMsg($arrayHeader,$arrayPostData);
     }
+        else if($message == "4"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "ภาพตัวอย่างบรรจุภัณฑ์ทรงกระบอก"."\n"."https://docs.google.com/document/d/1CJaSBeO7fPn5N9c0lXvK2z7MOp6qqiL-WqSRVJ24dAg/edit.";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+        else if($message == "5"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "ลิงค์ page Facebook"."\n"."https://www.facebook.com/pg/reducecostssavematerial/about/.";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
     else if($message == "ฝันดี"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "sticker";
