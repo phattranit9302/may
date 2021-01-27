@@ -14,7 +14,7 @@
     if($message == "สวัสดี"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "สวัสดีครับ/ค่ะ ยินดีต้อนรับเข้าสู่ แอปของเรา
+        $arrayPostData['messages'][0]['text'] = "สวัสดีครับ/ค่ะ ยินดีต้อนรับเข้าสู่ แอปพลิเคชันของเรา
 กรุณาพิมพ์ [เมนู] เพื่อดูเมนูครับ/ค่ะ
 ";
         $arrayPostData['messages'][1]['type'] = "sticker";
