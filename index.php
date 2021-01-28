@@ -31,7 +31,7 @@
     else if($message == "1"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "คู่มือการใช้งานแอปพลิเคชัน Reduce costs Save material"."\n"."https://docs.google.com/document/d/1lKhDeCfIwnq7lg3_jpuzTxQM_ec5RhifVNyIZ5jyUio/edit?usp=sharing.";
+        $arrayPostData['messages'][0]['text'] = "คู่มือการใช้งานแอปพลิเคชัน Reduce costs Save material"."\n"."https://docs.google.com/document/d/1CJaSBeO7fPn5N9c0lXvK2z7MOp6qqiL-WqSRVJ24dAg/edit.";
         replyMsg($arrayHeader,$arrayPostData);
     }
     else if($message == "2"){
