@@ -43,13 +43,13 @@
    else if($message == "3"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "ภาพตัวอย่างบรรจุภัณฑ์ปรึซึมสี่เหลี่ยมมุมฉาก"."\n"."https://docs.google.com/document/d/1CJaSBeO7fPn5N9c0lXvK2z7MOp6qqiL-WqSRVJ24dAg/edit.";
+        $arrayPostData['messages'][0]['text'] = "ภาพตัวอย่างบรรจุภัณฑ์ปรึซึมสี่เหลี่ยมมุมฉาก"."\n"."https://drive.google.com/file/d/18klmaYV8cxJaqFCEfoJ5R-CSnNqe6Y7w/view?usp=sharing.";
         replyMsg($arrayHeader,$arrayPostData);
     }
         else if($message == "4"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "ภาพตัวอย่างบรรจุภัณฑ์ทรงกระบอก"."\n"."https://docs.google.com/document/d/1CJaSBeO7fPn5N9c0lXvK2z7MOp6qqiL-WqSRVJ24dAg/edit.";
+        $arrayPostData['messages'][0]['text'] = "ภาพตัวอย่างบรรจุภัณฑ์ทรงกระบอก"."\n"."https://drive.google.com/file/d/1dqSuK410MROrdybJfZe-j73auT257X9n/view?usp=sharing.";
         replyMsg($arrayHeader,$arrayPostData);
     }
         else if($message == "5"){
