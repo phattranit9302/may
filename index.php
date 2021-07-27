@@ -25,13 +25,13 @@
     else if($message == "เมนู"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "พิมพ์ตัวอักษรตามที่กำหนดให้"."\n"."[1] คู่มือการใช้งานแอปพลิเคชัน Reduce costs Save material"."\n"."[2] ลิงค์คำนวณพื้นที่ผิวที่น้อยที่สุดของปรึซึมสี่เหลี่ยมมุมฉากและทรงกระบอก" . "\n"."[3] ลิงค์ page Facebook";
+        $arrayPostData['messages'][0]['text'] = "พิมพ์ตัวอักษรตามที่กำหนดให้"."\n"."[1] คู่มือการใช้งาน Bot Line "."\n"."[2] ลิงค์คำนวณพื้นที่ผิวที่น้อยที่สุดของปรึซึมสี่เหลี่ยมมุมฉากและทรงกระบอก" . "\n"."[3] ลิงค์ page Facebook";
         replyMsg($arrayHeader,$arrayPostData);
     }
     else if($message == "1"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "คู่มือการใช้งานแอปพลิเคชัน Reduce costs Save material"."\n"."https://drive.google.com/file/d/1KyDTqS6kJIGOEuJ6FBOpWUK_MzHyWySU/view?usp=sharing.";
+        $arrayPostData['messages'][0]['text'] = "คู่มือการใช้งาน Bot Line "."\n"."https://drive.google.com/file/d/1KyDTqS6kJIGOEuJ6FBOpWUK_MzHyWySU/view?usp=sharing.";
         replyMsg($arrayHeader,$arrayPostData);
     }
     else if($message == "2"){
