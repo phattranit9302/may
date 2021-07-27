@@ -31,7 +31,7 @@
     else if($message == "1"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "คู่มือการใช้งาน Bot Line "."\n"."https://drive.google.com/file/d/1hOJhzhVKR_JzrMNOfXtb0Hv8ZLVTel3c/view?usp=sharing.";
+        $arrayPostData['messages'][0]['text'] = "คู่มือการใช้งาน Bot Line "."\n"."https://drive.google.com/file/d/1_ujD3mZFNM1uGZ5oRWE_oSIm0blTFna7/view?usp=sharing.";
         replyMsg($arrayHeader,$arrayPostData);
     }
     else if($message == "2"){
