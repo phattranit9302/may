@@ -25,7 +25,7 @@
     else if($message == "เมนู"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "พิมพ์ตัวอักษรตามที่กำหนดให้"."\n"."[1] คู่มือการใช้งานแอปพลิเคชัน Reduce costs Save material"."\n"."[2] ลิงค์คำนวณพื้นที่ผิวที่น้อยที่สุดของปรึซึมสี่เหลี่ยมมุมฉากและทรงกระบอก" . "\n"."[3] ภาพตัวอย่างบรรจุภัณฑ์ปรึซึมสี่เหลี่ยมมุมฉาก" ."\n"."[4] ภาพตัวอย่างบรรจุภัณฑ์ทรงกระบอก" . "\n" . "[5] ลิงค์ page Facebook";
+        $arrayPostData['messages'][0]['text'] = "พิมพ์ตัวอักษรตามที่กำหนดให้"."\n"."[1] คู่มือการใช้งานแอปพลิเคชัน Reduce costs Save material"."\n"."[2] ลิงค์คำนวณพื้นที่ผิวที่น้อยที่สุดของปรึซึมสี่เหลี่ยมมุมฉากและทรงกระบอก" . "\n"."[3] ลิงค์ page Facebook";
         replyMsg($arrayHeader,$arrayPostData);
     }
     else if($message == "1"){
@@ -40,19 +40,7 @@
         $arrayPostData['messages'][0]['text'] = "ลิงค์คำนวณพื้นที่ผิวที่น้อยที่สุดของปรึซึมสี่เหลี่ยมมุมฉากและทรงกระบอก"."\n"."http://reducecostssavematerial.epizy.com.";
         replyMsg($arrayHeader,$arrayPostData);
     }
-   else if($message == "3"){
-        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
-        $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "ภาพตัวอย่างบรรจุภัณฑ์ปรึซึมสี่เหลี่ยมมุมฉาก"."\n"."https://drive.google.com/file/d/18klmaYV8cxJaqFCEfoJ5R-CSnNqe6Y7w/view?usp=sharing.";
-        replyMsg($arrayHeader,$arrayPostData);
-    }
-        else if($message == "4"){
-        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
-        $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "ภาพตัวอย่างบรรจุภัณฑ์ทรงกระบอก"."\n"."https://drive.google.com/file/d/1dqSuK410MROrdybJfZe-j73auT257X9n/view?usp=sharing.";
-        replyMsg($arrayHeader,$arrayPostData);
-    }
-        else if($message == "5"){
+        else if($message == "3"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "ลิงค์ page Facebook"."\n"."https://www.facebook.com/pg/reducecostssavematerial/about/.";
